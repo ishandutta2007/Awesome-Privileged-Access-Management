@@ -102,17 +102,41 @@ Open-source PAM and secure access tools have matured significantly. Leading opti
 
 |---------|-------------|---------|
 
+| **[Headscale](https://github.com/juanfont/headscale)** [![Stars](https://img.shields.io/github/stars/juanfont/headscale?style=social&color=white&label=Stars)](https://github.com/juanfont/headscale/stargazers) | Open-source, self-hostable control server implementing the Tailscale coordination protocol for zero-trust mesh VPNs. | Zero-trust networking control plane |
+
+| **[Keycloak](https://github.com/keycloak/keycloak)** [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white&label=Stars)](https://github.com/keycloak/keycloak/stargazers) | Open-source identity and access management with SSO, MFA, and fine-grained authorization that integrates with PAM workflows. | Identity provider for PAM |
+
 | **[HashiCorp Vault](https://github.com/hashicorp/vault)** [![Stars](https://img.shields.io/github/stars/hashicorp/vault?style=social&color=white&label=Stars)](https://github.com/hashicorp/vault/stargazers) | Secrets management platform frequently paired with Boundary or Teleport for dynamic credentials and rotation. | Secrets & dynamic credentials |
+
+| **[Tailscale](https://github.com/tailscale/tailscale)** [![Stars](https://img.shields.io/github/stars/tailscale/tailscale?style=social&color=white&label=Stars)](https://github.com/tailscale/tailscale/stargazers) | Open-source client for WireGuard-based zero-trust networking with identity-aware SSH access and ACLs. | Zero-trust networking + SSH |
+
+| **[Infisical](https://github.com/Infisical/infisical)** [![Stars](https://img.shields.io/github/stars/Infisical/infisical?style=social&color=white&label=Stars)](https://github.com/Infisical/infisical/stargazers) | Open-source secrets management platform with dynamic secrets, encryption, and universal sync for teams. | Secrets management |
+
+| **[Authelia](https://github.com/authelia/authelia)** [![Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white&label=Stars)](https://github.com/authelia/authelia/stargazers) | Open-source authentication and authorization server providing SSO, 2FA, and access control for protected apps. | Identity provider for PAM |
+
+| **[Authentik](https://github.com/goauthentik/authentik)** [![Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white&label=Stars)](https://github.com/goauthentik/authentik/stargazers) | Open-source identity provider with SSO, MFA, and flexible outposts for securing internal applications. | Identity provider for PAM |
+
+| **[age](https://github.com/FiloSottile/age)** [![Stars](https://img.shields.io/github/stars/FiloSottile/age?style=social&color=white&label=Stars)](https://github.com/FiloSottile/age/stargazers) | Simple, modern, and secure file encryption tool used to encrypt secrets at rest. | Encryption for secrets at rest |
+
+| **[SOPS](https://github.com/getsops/sops)** [![Stars](https://img.shields.io/github/stars/getsops/sops?style=social&color=white&label=Stars)](https://github.com/getsops/sops/stargazers) | Editor of encrypted files (YAML/JSON/ENV) supporting KMS, PGP, and age — a staple for GitOps secret workflows. | Secrets ops (GitOps) |
+
+| **[Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa)** [![Stars](https://img.shields.io/github/stars/open-policy-agent/opa?style=social&color=white&label=Stars)](https://github.com/open-policy-agent/opa/stargazers) | Policy engine for fine-grained, context-aware access decisions across infrastructure and applications. | Policy-based access control |
+
+| **[step-ca](https://github.com/smallstep/certificates)** [![Stars](https://img.shields.io/github/stars/smallstep/certificates?style=social&color=white&label=Stars)](https://github.com/smallstep/certificates/stargazers) | Private certificate authority for short-lived SSH/TLS certificates as an alternative to static keys. | Certificate-based access |
 
 | **[Warpgate](https://github.com/warp-tech/warpgate)** [![Stars](https://img.shields.io/github/stars/warp-tech/warpgate?style=social&color=white&label=Stars)](https://github.com/warp-tech/warpgate/stargazers) | Smart SSH & HTTPS bastion with recording, audit, and easy access control. | Lightweight bastion |
 
+| **[OpenBao](https://github.com/openbao/openbao)** [![Stars](https://img.shields.io/github/stars/openbao/openbao?style=social&color=white&label=Stars)](https://github.com/openbao/openbao/stargazers) | Community-driven, open-source fork of HashiCorp Vault for secrets management and dynamic credentials. | Secrets & dynamic credentials |
+
+| **[Kanidm](https://github.com/kanidm/kanidm)** [![Stars](https://img.shields.io/github/stars/kanidm/kanidm?style=social&color=white&label=Stars)](https://github.com/kanidm/kanidm/stargazers) | Modern, Rust-based identity management platform designed to be simple and secure with built-in MFA. | Identity management |
+
 | **[Bastillion](https://github.com/bastillion-io/Bastillion)** [![Stars](https://img.shields.io/github/stars/bastillion-io/Bastillion?style=social&color=white&label=Stars)](https://github.com/bastillion-io/Bastillion/stargazers) | Web-based SSH console with key management and session control. | Web SSH management |
+
+| **[Conjur](https://github.com/cyberark/conjur)** [![Stars](https://img.shields.io/github/stars/cyberark/conjur?style=social&color=white&label=Stars)](https://github.com/cyberark/conjur/stargazers) | CyberArk's open-source secrets management solution for machine identities with policy-based access. | Secrets & machine identity |
 
 | **Linux PAM modules + sudoers management** | Standard Pluggable Authentication Modules and tools for fine-grained privilege control on Linux systems. | OS-level privilege elevation |
 
-| **Keycloak / Authentik / FreeIPA** | Open-source identity providers that integrate with PAM tools for SSO and MFA. | Identity providers for PAM |
-
-| **Custom certificate authorities & short-lived cert tools** | Various open-source projects for issuing ephemeral SSH/TLS certificates as an alternative to static keys. | Certificate-based access |
+| **Custom certificate authorities & short-lived cert tools** | Various open-source projects (e.g., step-ca) for issuing ephemeral SSH/TLS certificates as an alternative to static keys. | Certificate-based access |
 
 
 
