@@ -22,41 +22,41 @@ Commercial / hosted platforms are listed separately for completeness. Open-sourc
 
 
 
-| Platform | Description | Key Focus |
+| Platform | Description | Key Focus | Pricing (Starting Tier) | Free Tier / Trial |
 
-|----------|-------------|-----------|
+|---------|-------------|-----------|--------------------------|-------------------|
 
-| **[CyberArk](https://www.cyberark.com/)** | Industry-leading PAM platform with Enterprise Password Vault, Privileged Session Manager, secrets management, and zero standing privileges. Strong for hybrid/multi-cloud and high-risk access. | Full lifecycle privileged credential & session management |
+| **[CyberArk](https://www.cyberark.com/)** | Industry-leading PAM platform with Enterprise Password Vault, Privileged Session Manager, secrets management, and zero standing privileges. Strong for hybrid/multi-cloud and high-risk access. | Full lifecycle privileged credential & session management | ~$600–$1,100 per user/year (~$50–$90/user/mo), quote-based | **30-day free trial** (Privilege Cloud sandbox); no free-forever tier |
 
-| **[BeyondTrust](https://www.beyondtrust.com/)** | Modern PAM with Pathfinder platform, True Privilege graph, JIT access, identity security insights, and AI agent security. Leader in Gartner Magic Quadrant. | Identity security posture, JIT, and cross-domain visibility |
+| **[BeyondTrust](https://www.beyondtrust.com/)** | Modern PAM with Pathfinder platform, True Privilege graph, JIT access, identity security insights, and AI agent security. Leader in Gartner Magic Quadrant. | Identity security posture, JIT, and cross-domain visibility | from ~$1,995/mo (base enterprise remote-support tier) | **14-day free trial** (Remote Support / Privileged Remote Access); no free-forever tier |
 
-| **[Delinea](https://delinea.com/)** | AI-driven, cloud-native identity security and PAM platform (includes Secret Server and Cloud Suite). Acquired StrongDM for enhanced JIT proxy capabilities. | Unified identity discovery, vaulting, and multi-cloud PAM |
+| **[Delinea](https://delinea.com/)** | AI-driven, cloud-native identity security and PAM platform (includes Secret Server and Cloud Suite). Acquired StrongDM for enhanced JIT proxy capabilities. | Unified identity discovery, vaulting, and multi-cloud PAM | ~$45–$180+/user/year by tier (Professional/Premium/Platinum), quote-based | **30-day free trial** (Secret Server / Privilege Manager / Server PAM); no free-forever tier |
 
-| **[StrongDM](https://www.strongdm.com/)** (now part of Delinea) | Zero Trust PAM with protocol-aware proxy for databases, servers, Kubernetes, and apps. Ephemeral credentials, continuous authorization, and developer-friendly workflows. | Infrastructure access proxy & JIT |
+| **[StrongDM](https://www.strongdm.com/)** (now part of Delinea) | Zero Trust PAM with protocol-aware proxy for databases, servers, Kubernetes, and apps. Ephemeral credentials, continuous authorization, and developer-friendly workflows. | Infrastructure access proxy & JIT | **$50/user/mo** (single SKU, annual commitment) | **14-day free trial** (full Control Plane + proxy, no credit card); no free-forever tier |
 
-| **[Teleport](https://goteleport.com/)** | Modern infrastructure access platform (open-source core + commercial). Certificate-based, passwordless access to SSH, Kubernetes, databases, Windows, and web apps with session recording. | Identity-based, vault-free PAM for cloud-native teams |
+| **[Teleport](https://goteleport.com/)** | Modern infrastructure access platform (open-source core + commercial). Certificate-based, passwordless access to SSH, Kubernetes, databases, Windows, and web apps with session recording. | Identity-based, vault-free PAM for cloud-native teams | from **$12–$18/resource/mo** (Team tier, cloud) | **14-day free trial** (Enterprise Cloud/Self-Hosted); free open-source Community Edition |
 
-| **[Akeyless](https://www.akeyless.io/)** | Modern SaaS PAM with short-lived credentials, identity-based policies, and support for humans, machines, and AI agents. Secrets management + secure remote access. | Zero standing privileges & secrets |
+| **[Akeyless](https://www.akeyless.io/)** | Modern SaaS PAM with short-lived credentials, identity-based policies, and support for humans, machines, and AI agents. Secrets management + secure remote access. | Zero standing privileges & secrets | enterprise quote-based (aggregators list base from ~$7/mo) | **Free-forever plan**: 5 clients, 500 static secrets, 5 dynamic secrets, 5 rotated secrets, 3 targets, 1 gateway cluster, 3-day audit retention |
 
-| **[HashiCorp Boundary](https://www.boundaryproject.io/)** | Identity-aware proxy for least-privileged access to infrastructure. Integrates with Vault for dynamic credentials, session recording, and automated discovery. | Secure infrastructure access without credential distribution |
+| **[HashiCorp Boundary](https://www.boundaryproject.io/)** | Identity-aware proxy for least-privileged access to infrastructure. Integrates with Vault for dynamic credentials, session recording, and automated discovery. | Secure infrastructure access without credential distribution | HCP from **$0.10/resource/mo** (usage-based metering) | **$500 HCP trial credit** (pay-as-you-go); free open-source Community Edition |
 
-| **[KeeperPAM](https://www.keepersecurity.com/)** | Cloud-native PAM consolidating password management, secrets, connection management, ZTNA, remote browser isolation, and session recording. | Unified vault + privileged connections |
+| **[KeeperPAM](https://www.keepersecurity.com/)** | Cloud-native PAM consolidating password management, secrets, connection management, ZTNA, remote browser isolation, and session recording. | Unified vault + privileged connections | Business Starter **$2/user/mo** (annual, min 5 users); full KeeperPAM custom-quoted | **30-day free trial** (Business/Enterprise/KeeperPAM); reverts to limited free local view |
 
-| **[ManageEngine PAM360](https://www.manageengine.com/privileged-access-management/)** | Full-stack PAM with privileged account/session management, privilege elevation, discovery, recording, and strong compliance reporting. | Affordable enterprise PAM with ITSM integrations |
+| **[ManageEngine PAM360](https://www.manageengine.com/privileged-access-management/)** | Full-stack PAM with privileged account/session management, privilege elevation, discovery, recording, and strong compliance reporting. | Affordable enterprise PAM with ITSM integrations | Enterprise Edition **$7,995/yr** (10 admins, 25 SSH keys, unlimited users/resources) | **Free-forever Free Edition** (1 admin, up to 10 resources) + **30-day full trial** |
 
-| **[ARCON](https://arconnet.com/)** | Modular PAM suite (on-prem, virtual, or PAMaaS) focused on privileged account management, session control, and compliance, especially strong in APAC and financial services. | Comprehensive privileged access control |
+| **[ARCON](https://arconnet.com/)** | Modular PAM suite (on-prem, virtual, or PAMaaS) focused on privileged account management, session control, and compliance, especially strong in APAC and financial services. | Comprehensive privileged access control | from **$390/user/year** (1–99 user band, AWS Marketplace) | No free tier; custom demo / proof-of-concept on request |
 
-| **[One Identity Safeguard](https://www.oneidentity.com/)** | PAM suite including Privileged Passwords, Privileged Sessions, and Analytics. Part of broader One Identity/Quest portfolio for password vaulting and session management. | Privileged passwords + session recording |
+| **[One Identity Safeguard](https://www.oneidentity.com/)** | PAM suite including Privileged Passwords, Privileged Sessions, and Analytics. Part of broader One Identity/Quest portfolio for password vaulting and session management. | Privileged passwords + session recording | quote-based (module licensing) | **30-day free trial** (Safeguard for Privileged Passwords / Privilege Manager) |
 
-| **[Tailscale SSH](https://tailscale.com/)** | WireGuard-based zero-trust networking with identity-aware SSH access, ACLs, and easy mesh connectivity. Lightweight alternative for secure remote access. | Zero-trust networking + SSH |
+| **[Tailscale SSH](https://tailscale.com/)** | WireGuard-based zero-trust networking with identity-aware SSH access, ACLs, and easy mesh connectivity. Lightweight alternative for secure remote access. | Zero-trust networking + SSH | Standard **$8/user/mo**; Premium **$18/user/mo** | **Free-forever plan**: up to 6 users, unlimited devices |
 
-| **[SecureAuth](https://www.secureauth.com/)** / related identity platforms | Advanced identity and access solutions that include privileged access controls and adaptive authentication. | Identity-centric access security |
+| **[SecureAuth](https://www.secureauth.com/)** / related identity platforms | Advanced identity and access solutions that include privileged access controls and adaptive authentication. | Identity-centric access security | from ~**$1/user/mo** (baseline Secure plan) | **14-day free trial** (Customer Authority / CIAM platform, no credit card); no free-forever tier |
 
-| **[WALLIX](https://www.wallix.com/)** | European PAM (Bastion) with strong session management, credential vaulting, and compliance focus (NIS2, etc.). | Session recording & European regulatory fit |
+| **[WALLIX](https://www.wallix.com/)** | European PAM (Bastion) with strong session management, credential vaulting, and compliance focus (NIS2, etc.). | Session recording & European regulatory fit | ~$4–$6/user/mo (Capterra estimate) | **30-day free trial** (WALLIX PAM platform, no credit card); no free-forever tier |
 
-| **[Ping Identity](https://www.pingidentity.com/)** (Advanced Identity Cloud / PAM capabilities) | Identity platform with advanced access management and privileged controls in cloud environments. | Identity governance + privileged access |
+| **[Ping Identity](https://www.pingidentity.com/)** (Advanced Identity Cloud / PAM capabilities) | Identity platform with advanced access management and privileged controls in cloud environments. | Identity governance + privileged access | PingOne Workforce Essential **$3/user/mo** (5,000-user min ≈ $15,000/yr); Customers Essential from $35,000/yr | **30-day free trial** (PingOne for Customers / Workforce); no free-forever tier |
 
-| **[Senhasegura](https://www.senhasegura.com/)** | Comprehensive PAM with credential management, session monitoring, and audit features. Strong presence in Latin America and growing globally. | Full PAM suite with high reliability |
+| **[Senhasegura](https://www.senhasegura.com/)** | Comprehensive PAM with credential management, session monitoring, and audit features. Strong presence in Latin America and growing globally. | Full PAM suite with high reliability | quote-based (advertises ~70% lower TCO than competitors) | Free demo / evaluation environment on request; no self-service trial |
 
 
 
