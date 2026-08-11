@@ -13,6 +13,12 @@ Keywords: PAM, privileged access management, privileged account management, secr
 
 # 🛡️ Awesome-Privileged-Access-Management
 
+<div align="center">
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+
+</div>
+
 ## 📚 Table of Contents
 
 - [🛡️ Top Privileged Access Management (PAM) Platforms](#-top-privileged-access-management-pam-platforms)
