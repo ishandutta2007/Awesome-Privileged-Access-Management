@@ -80,17 +80,17 @@ Open-source PAM and secure access tools have matured significantly. Leading opti
 
 |---------|-------------|---------|-------|
 
-| **[Teleport](https://github.com/gravitational/teleport)** (Community Edition) | Leading open-source infrastructure access platform. Certificate-based, short-lived credentials for SSH, Kubernetes, databases, Windows, web apps, and more. Built-in session recording, audit logs, RBAC, and SSO. | Apache 2.0 | Most complete open-source modern PAM; commercial edition adds enterprise features |
+| **[JumpServer](https://github.com/jumpserver/jumpserver)** [![Stars](https://img.shields.io/github/stars/jumpserver/jumpserver?style=social&color=white&label=Stars)](https://github.com/jumpserver/jumpserver/stargazers) | Full open-source PAM / bastion host platform. Web-based access to SSH, RDP, Kubernetes, databases, and RemoteApp with credential vault, session recording, and on-demand access. | GPL-3.0 | Mature, widely used alternative to commercial bastions |
 
-| **[HashiCorp Boundary](https://github.com/hashicorp/boundary)** (Community Edition) | Identity-aware proxy for secure, least-privileged access to infrastructure. Supports dynamic credentials (via Vault), session recording, automated target discovery, and Terraform automation. | MPL-2.0 | Excellent for platform teams; pairs perfectly with Vault |
+| **[Teleport](https://github.com/gravitational/teleport)** (Community Edition) [![Stars](https://img.shields.io/github/stars/gravitational/teleport?style=social&color=white&label=Stars)](https://github.com/gravitational/teleport/stargazers) | Leading open-source infrastructure access platform. Certificate-based, short-lived credentials for SSH, Kubernetes, databases, Windows, web apps, and more. Built-in session recording, audit logs, RBAC, and SSO. | Apache 2.0 | Most complete open-source modern PAM; commercial edition adds enterprise features |
 
-| **[JumpServer](https://github.com/jumpserver/jumpserver)** | Full open-source PAM / bastion host platform. Web-based access to SSH, RDP, Kubernetes, databases, and RemoteApp with credential vault, session recording, and on-demand access. | GPL-3.0 | Mature, widely used alternative to commercial bastions |
+| **[Pomerium](https://www.pomerium.com/)** (open-source core) [![Stars](https://img.shields.io/github/stars/pomerium/pomerium?style=social&color=white&label=Stars)](https://github.com/pomerium/pomerium/stargazers) | Identity-aware access proxy for zero-trust access to internal applications and services. | Apache 2.0 | Zero-trust application access |
 
-| **[Apache Guacamole](https://guacamole.apache.org/)** | Clientless remote desktop gateway supporting RDP, VNC, SSH, and more via HTML5. Can be extended for privileged session management and recording. | Apache 2.0 | Lightweight remote access gateway |
+| **[HashiCorp Boundary](https://github.com/hashicorp/boundary)** (Community Edition) [![Stars](https://img.shields.io/github/stars/hashicorp/boundary?style=social&color=white&label=Stars)](https://github.com/hashicorp/boundary/stargazers) | Identity-aware proxy for secure, least-privileged access to infrastructure. Supports dynamic credentials (via Vault), session recording, automated target discovery, and Terraform automation. | MPL-2.0 | Excellent for platform teams; pairs perfectly with Vault |
 
-| **[FreeIPA](https://www.freeipa.org/)** / Red Hat IdM | Open-source identity management for Linux/Unix with LDAP, Kerberos, DNS, host-based access control, and sudo policies. Strong foundation for Linux privileged access. | GPL | Centralized Linux identity & access control |
+| **[Apache Guacamole](https://guacamole.apache.org/)** [![Stars](https://img.shields.io/github/stars/apache/guacamole-client?style=social&color=white&label=Stars)](https://github.com/apache/guacamole-client/stargazers) | Clientless remote desktop gateway supporting RDP, VNC, SSH, and more via HTML5. Can be extended for privileged session management and recording. | Apache 2.0 | Lightweight remote access gateway |
 
-| **[Pomerium](https://www.pomerium.com/)** (open-source core) | Identity-aware access proxy for zero-trust access to internal applications and services. | Apache 2.0 | Zero-trust application access |
+| **[FreeIPA](https://www.freeipa.org/)** / Red Hat IdM [![Stars](https://img.shields.io/github/stars/freeipa/freeipa?style=social&color=white&label=Stars)](https://github.com/freeipa/freeipa/stargazers) | Open-source identity management for Linux/Unix with LDAP, Kerberos, DNS, host-based access control, and sudo policies. Strong foundation for Linux privileged access. | GPL | Centralized Linux identity & access control |
 
 
 
@@ -102,11 +102,11 @@ Open-source PAM and secure access tools have matured significantly. Leading opti
 
 |---------|-------------|---------|
 
-| **[Warpgate](https://github.com/warp-tech/warpgate)** | Smart SSH & HTTPS bastion with recording, audit, and easy access control. | Lightweight bastion |
+| **[HashiCorp Vault](https://github.com/hashicorp/vault)** [![Stars](https://img.shields.io/github/stars/hashicorp/vault?style=social&color=white&label=Stars)](https://github.com/hashicorp/vault/stargazers) | Secrets management platform frequently paired with Boundary or Teleport for dynamic credentials and rotation. | Secrets & dynamic credentials |
 
-| **[Bastillion](https://github.com/bastillion-io/Bastillion)** | Web-based SSH console with key management and session control. | Web SSH management |
+| **[Warpgate](https://github.com/warp-tech/warpgate)** [![Stars](https://img.shields.io/github/stars/warp-tech/warpgate?style=social&color=white&label=Stars)](https://github.com/warp-tech/warpgate/stargazers) | Smart SSH & HTTPS bastion with recording, audit, and easy access control. | Lightweight bastion |
 
-| **[HashiCorp Vault](https://github.com/hashicorp/vault)** | Secrets management platform frequently paired with Boundary or Teleport for dynamic credentials and rotation. | Secrets & dynamic credentials |
+| **[Bastillion](https://github.com/bastillion-io/Bastillion)** [![Stars](https://img.shields.io/github/stars/bastillion-io/Bastillion?style=social&color=white&label=Stars)](https://github.com/bastillion-io/Bastillion/stargazers) | Web-based SSH console with key management and session control. | Web SSH management |
 
 | **Linux PAM modules + sudoers management** | Standard Pluggable Authentication Modules and tools for fine-grained privilege control on Linux systems. | OS-level privilege elevation |
 
