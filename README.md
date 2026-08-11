@@ -1,6 +1,11 @@
+<!--
+Meta description: A curated list of the best Privileged Access Management (PAM) platforms — commercial SaaS and open-source tools for privileged account management, credential vaulting, session recording, just-in-time access, zero standing privileges, secrets management, SSH bastions, and identity security across hybrid, multi-cloud, and Kubernetes environments.
+Keywords: PAM, privileged access management, privileged account management, secrets management, credential vaulting, session recording, just-in-time access, JIT, zero standing privileges, identity security, SSH bastion, jump server, zero trust, Kubernetes access, Teleport, JumpServer, HashiCorp Boundary, Vault, CyberArk, BeyondTrust, Delinea, open source PAM, self-hosted PAM
+-->
+
 <div align="center">
 
-<img src="assets/banner.svg" alt="Awesome Privileged Access Management banner" width="100%" />
+<img src="assets/banner.svg" alt="Awesome Privileged Access Management — curated list of PAM platforms, credential vaults, secrets managers and SSH bastion tools" width="100%" />
 
 </div>
 
@@ -8,13 +13,23 @@
 
 # 🛡️ Awesome-Privileged-Access-Management
 
+## 📚 Table of Contents
+
+- [🛡️ Top Privileged Access Management (PAM) Platforms](#-top-privileged-access-management-pam-platforms)
+- [☁️ SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source Software](#-open-source-software)
+- [🚀 Quick Start Recommendations](#-quick-start-recommendations)
+- [🤝 Contributing](#-contributing)
+
+---
+
 ## 🛡️ Top Privileged Access Management (PAM) Platforms
 
 
 
-A curated list of leading Privileged Access Management (PAM) solutions for securing, managing, monitoring, and auditing privileged accounts, credentials, sessions, and just-in-time access across hybrid, multi-cloud, and modern infrastructure.  
+A curated list of leading **Privileged Access Management (PAM)** solutions for securing, managing, monitoring, and auditing **privileged accounts**, **credentials**, **sessions**, and **just-in-time (JIT) access** across hybrid, multi-cloud, and modern infrastructure.  
 
-**Primary focus: open-source software.**
+**Primary focus: open-source software.** Whether you need a full **PAM platform**, a **secrets manager**, an **SSH bastion / jump server**, **session recording**, **credential vaulting**, or **zero-trust infrastructure access**, this list covers the leading options with pricing, free tiers, company size, and GitHub popularity.
 
 
 
