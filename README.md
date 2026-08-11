@@ -1,4 +1,12 @@
-# Awesome-Privileged-Access-Management
+<div align="center">
+
+<img src="assets/banner.svg" alt="Awesome Privileged Access Management banner" width="100%" />
+
+</div>
+
+<br/>
+
+# 🛡️ Awesome-Privileged-Access-Management
 
 ## Top Privileged Access Management (PAM) Platforms
 
