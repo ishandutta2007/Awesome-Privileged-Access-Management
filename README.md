@@ -1,98 +1,193 @@
 # Awesome-Privileged-Access-Management
 
-# Top Privileged Access Management (PAM) Platforms
-
-A curated list of leading Privileged Access Management (PAM) solutions for securing, managing, monitoring, and auditing privileged accounts, credentials, sessions, and just-in-time access across hybrid, multi-cloud, and modern infrastructure.  
-**Primary focus: open-source software.**
-
-Commercial / hosted platforms are listed separately for completeness. Open-source alternatives and community tools are emphasized throughout.
-
----
-
-## SaaS / Hosted Platforms
-
-| Platform | Description | Key Focus |
-|----------|-------------|-----------|
-| **[CyberArk](https://www.cyberark.com/)** | Industry-leading PAM platform with Enterprise Password Vault, Privileged Session Manager, secrets management, and zero standing privileges. Strong for hybrid/multi-cloud and high-risk access. | Full lifecycle privileged credential & session management |
-| **[BeyondTrust](https://www.beyondtrust.com/)** | Modern PAM with Pathfinder platform, True Privilege graph, JIT access, identity security insights, and AI agent security. Leader in Gartner Magic Quadrant. | Identity security posture, JIT, and cross-domain visibility |
-| **[Delinea](https://delinea.com/)** | AI-driven, cloud-native identity security and PAM platform (includes Secret Server and Cloud Suite). Acquired StrongDM for enhanced JIT proxy capabilities. | Unified identity discovery, vaulting, and multi-cloud PAM |
-| **[StrongDM](https://www.strongdm.com/)** (now part of Delinea) | Zero Trust PAM with protocol-aware proxy for databases, servers, Kubernetes, and apps. Ephemeral credentials, continuous authorization, and developer-friendly workflows. | Infrastructure access proxy & JIT |
-| **[Teleport](https://goteleport.com/)** | Modern infrastructure access platform (open-source core + commercial). Certificate-based, passwordless access to SSH, Kubernetes, databases, Windows, and web apps with session recording. | Identity-based, vault-free PAM for cloud-native teams |
-| **[Akeyless](https://www.akeyless.io/)** | Modern SaaS PAM with short-lived credentials, identity-based policies, and support for humans, machines, and AI agents. Secrets management + secure remote access. | Zero standing privileges & secrets |
-| **[HashiCorp Boundary](https://www.boundaryproject.io/)** | Identity-aware proxy for least-privileged access to infrastructure. Integrates with Vault for dynamic credentials, session recording, and automated discovery. | Secure infrastructure access without credential distribution |
-| **[KeeperPAM](https://www.keepersecurity.com/)** | Cloud-native PAM consolidating password management, secrets, connection management, ZTNA, remote browser isolation, and session recording. | Unified vault + privileged connections |
-| **[ManageEngine PAM360](https://www.manageengine.com/privileged-access-management/)** | Full-stack PAM with privileged account/session management, privilege elevation, discovery, recording, and strong compliance reporting. | Affordable enterprise PAM with ITSM integrations |
-| **[ARCON](https://arconnet.com/)** | Modular PAM suite (on-prem, virtual, or PAMaaS) focused on privileged account management, session control, and compliance, especially strong in APAC and financial services. | Comprehensive privileged access control |
-| **[One Identity Safeguard](https://www.oneidentity.com/)** | PAM suite including Privileged Passwords, Privileged Sessions, and Analytics. Part of broader One Identity/Quest portfolio for password vaulting and session management. | Privileged passwords + session recording |
-| **[Tailscale SSH](https://tailscale.com/)** | WireGuard-based zero-trust networking with identity-aware SSH access, ACLs, and easy mesh connectivity. Lightweight alternative for secure remote access. | Zero-trust networking + SSH |
-| **[SecureAuth](https://www.secureauth.com/)** / related identity platforms | Advanced identity and access solutions that include privileged access controls and adaptive authentication. | Identity-centric access security |
-| **[WALLIX](https://www.wallix.com/)** | European PAM (Bastion) with strong session management, credential vaulting, and compliance focus (NIS2, etc.). | Session recording & European regulatory fit |
-| **[Ping Identity](https://www.pingidentity.com/)** (Advanced Identity Cloud / PAM capabilities) | Identity platform with advanced access management and privileged controls in cloud environments. | Identity governance + privileged access |
-| **[Senhasegura](https://www.senhasegura.com/)** | Comprehensive PAM with credential management, session monitoring, and audit features. Strong presence in Latin America and growing globally. | Full PAM suite with high reliability |
-
----
-
-## Open-Source Softwares
-
-Open-source PAM and secure access tools have matured significantly. Leading options provide identity-based access, session recording, just-in-time privileges, and support for SSH, RDP, Kubernetes, databases, and more — often without traditional credential vaults.
-
-### Core Frameworks & PAM Platforms
-
-| Project | Description | License | Notes |
-|---------|-------------|---------|-------|
-| **[Teleport](https://github.com/gravitational/teleport)** (Community Edition) | Leading open-source infrastructure access platform. Certificate-based, short-lived credentials for SSH, Kubernetes, databases, Windows, web apps, and more. Built-in session recording, audit logs, RBAC, and SSO. | Apache 2.0 | Most complete open-source modern PAM; commercial edition adds enterprise features |
-| **[HashiCorp Boundary](https://github.com/hashicorp/boundary)** (Community Edition) | Identity-aware proxy for secure, least-privileged access to infrastructure. Supports dynamic credentials (via Vault), session recording, automated target discovery, and Terraform automation. | MPL-2.0 | Excellent for platform teams; pairs perfectly with Vault |
-| **[JumpServer](https://github.com/jumpserver/jumpserver)** | Full open-source PAM / bastion host platform. Web-based access to SSH, RDP, Kubernetes, databases, and RemoteApp with credential vault, session recording, and on-demand access. | GPL-3.0 | Mature, widely used alternative to commercial bastions |
-| **[Apache Guacamole](https://guacamole.apache.org/)** | Clientless remote desktop gateway supporting RDP, VNC, SSH, and more via HTML5. Can be extended for privileged session management and recording. | Apache 2.0 | Lightweight remote access gateway |
-| **[FreeIPA](https://www.freeipa.org/)** / Red Hat IdM | Open-source identity management for Linux/Unix with LDAP, Kerberos, DNS, host-based access control, and sudo policies. Strong foundation for Linux privileged access. | GPL | Centralized Linux identity & access control |
-| **[Pomerium](https://www.pomerium.com/)** (open-source core) | Identity-aware access proxy for zero-trust access to internal applications and services. | Apache 2.0 | Zero-trust application access |
-
-### Specialized Libraries & Related Tools
-
-| Project | Description | Focus Area |
-|---------|-------------|---------|
-| **[Warpgate](https://github.com/warp-tech/warpgate)** | Smart SSH & HTTPS bastion with recording, audit, and easy access control. | Lightweight bastion |
-| **[Bastillion](https://github.com/bastillion-io/Bastillion)** | Web-based SSH console with key management and session control. | Web SSH management |
-| **[HashiCorp Vault](https://github.com/hashicorp/vault)** | Secrets management platform frequently paired with Boundary or Teleport for dynamic credentials and rotation. | Secrets & dynamic credentials |
-| **Linux PAM modules + sudoers management** | Standard Pluggable Authentication Modules and tools for fine-grained privilege control on Linux systems. | OS-level privilege elevation |
-| **Keycloak / Authentik / FreeIPA** | Open-source identity providers that integrate with PAM tools for SSO and MFA. | Identity providers for PAM |
-| **Custom certificate authorities & short-lived cert tools** | Various open-source projects for issuing ephemeral SSH/TLS certificates as an alternative to static keys. | Certificate-based access |
-
-### Additional Notable Open-Source Tools
-
-- **Session recording & audit tools** — Many projects build on Guacamole or custom proxies for DVR-style playback.
-- **Zero-trust networking** — Tailscale (open-source client components), Headscale, and WireGuard-based solutions complement PAM.
-- **Secrets engines** — Vault, SOPS, age, and community secrets managers.
-- **Kubernetes-native access** — Teleport, Boundary, and projects like kube-apiserver proxies or OPA/Gatekeeper for policy.
-- **Community bastions and jump hosts** — Numerous self-hosted solutions for SSH/RDP gatewaying with logging.
-
-**Note:** Traditional credential vaulting and deep Windows/Active Directory privileged account discovery remain stronger in commercial PAM. Open-source tools excel at modern infrastructure (SSH, Kubernetes, databases, cloud), certificate-based access, session recording, and just-in-time workflows. Many organizations combine Teleport or Boundary with Vault and an IdP for a complete open-source stack.
-
----
-
-## Quick Start Recommendations
-
-| Goal | Recommended Starting Point |
-|------|---------------------------|
-| Full open-source modern PAM (SSH, K8s, DBs, recording) | **Teleport Community Edition** |
-| Identity-aware proxy + dynamic credentials | **HashiCorp Boundary** + **Vault** |
-| Web-based multi-protocol bastion (SSH/RDP/DB) | **JumpServer** |
-| Lightweight remote desktop / gateway | **Apache Guacamole** |
-| Linux identity & host-based access control | **FreeIPA** |
-| Enterprise commercial PAM leaders | **CyberArk**, **BeyondTrust**, or **Delinea** |
-| Cloud-native / developer-friendly access | **Teleport**, **StrongDM/Delinea**, or **Akeyless** |
-| Secrets + PAM combination | **KeeperPAM** or **Akeyless** + open-source tools |
-| European / compliance-focused | **WALLIX** or **Senhasegura** |
-| Affordable full-stack PAM | **ManageEngine PAM360** |
-
----
-
-## Contributing
-
-Contributions, corrections, and new open-source projects are welcome.  
-Please open an issue or pull request.
-
----
-
-**Last updated:** August 2026  
+## Top Privileged Access Management (PAM) Platforms
+
+
+
+A curated list of leading Privileged Access Management (PAM) solutions for securing, managing, monitoring, and auditing privileged accounts, credentials, sessions, and just-in-time access across hybrid, multi-cloud, and modern infrastructure.  
+
+**Primary focus: open-source software.**
+
+
+
+Commercial / hosted platforms are listed separately for completeness. Open-source alternatives and community tools are emphasized throughout.
+
+
+
+---
+
+
+
+## SaaS / Hosted Platforms
+
+
+
+| Platform | Description | Key Focus |
+
+|----------|-------------|-----------|
+
+| **[CyberArk](https://www.cyberark.com/)** | Industry-leading PAM platform with Enterprise Password Vault, Privileged Session Manager, secrets management, and zero standing privileges. Strong for hybrid/multi-cloud and high-risk access. | Full lifecycle privileged credential & session management |
+
+| **[BeyondTrust](https://www.beyondtrust.com/)** | Modern PAM with Pathfinder platform, True Privilege graph, JIT access, identity security insights, and AI agent security. Leader in Gartner Magic Quadrant. | Identity security posture, JIT, and cross-domain visibility |
+
+| **[Delinea](https://delinea.com/)** | AI-driven, cloud-native identity security and PAM platform (includes Secret Server and Cloud Suite). Acquired StrongDM for enhanced JIT proxy capabilities. | Unified identity discovery, vaulting, and multi-cloud PAM |
+
+| **[StrongDM](https://www.strongdm.com/)** (now part of Delinea) | Zero Trust PAM with protocol-aware proxy for databases, servers, Kubernetes, and apps. Ephemeral credentials, continuous authorization, and developer-friendly workflows. | Infrastructure access proxy & JIT |
+
+| **[Teleport](https://goteleport.com/)** | Modern infrastructure access platform (open-source core + commercial). Certificate-based, passwordless access to SSH, Kubernetes, databases, Windows, and web apps with session recording. | Identity-based, vault-free PAM for cloud-native teams |
+
+| **[Akeyless](https://www.akeyless.io/)** | Modern SaaS PAM with short-lived credentials, identity-based policies, and support for humans, machines, and AI agents. Secrets management + secure remote access. | Zero standing privileges & secrets |
+
+| **[HashiCorp Boundary](https://www.boundaryproject.io/)** | Identity-aware proxy for least-privileged access to infrastructure. Integrates with Vault for dynamic credentials, session recording, and automated discovery. | Secure infrastructure access without credential distribution |
+
+| **[KeeperPAM](https://www.keepersecurity.com/)** | Cloud-native PAM consolidating password management, secrets, connection management, ZTNA, remote browser isolation, and session recording. | Unified vault + privileged connections |
+
+| **[ManageEngine PAM360](https://www.manageengine.com/privileged-access-management/)** | Full-stack PAM with privileged account/session management, privilege elevation, discovery, recording, and strong compliance reporting. | Affordable enterprise PAM with ITSM integrations |
+
+| **[ARCON](https://arconnet.com/)** | Modular PAM suite (on-prem, virtual, or PAMaaS) focused on privileged account management, session control, and compliance, especially strong in APAC and financial services. | Comprehensive privileged access control |
+
+| **[One Identity Safeguard](https://www.oneidentity.com/)** | PAM suite including Privileged Passwords, Privileged Sessions, and Analytics. Part of broader One Identity/Quest portfolio for password vaulting and session management. | Privileged passwords + session recording |
+
+| **[Tailscale SSH](https://tailscale.com/)** | WireGuard-based zero-trust networking with identity-aware SSH access, ACLs, and easy mesh connectivity. Lightweight alternative for secure remote access. | Zero-trust networking + SSH |
+
+| **[SecureAuth](https://www.secureauth.com/)** / related identity platforms | Advanced identity and access solutions that include privileged access controls and adaptive authentication. | Identity-centric access security |
+
+| **[WALLIX](https://www.wallix.com/)** | European PAM (Bastion) with strong session management, credential vaulting, and compliance focus (NIS2, etc.). | Session recording & European regulatory fit |
+
+| **[Ping Identity](https://www.pingidentity.com/)** (Advanced Identity Cloud / PAM capabilities) | Identity platform with advanced access management and privileged controls in cloud environments. | Identity governance + privileged access |
+
+| **[Senhasegura](https://www.senhasegura.com/)** | Comprehensive PAM with credential management, session monitoring, and audit features. Strong presence in Latin America and growing globally. | Full PAM suite with high reliability |
+
+
+
+---
+
+
+
+## Open-Source Softwares
+
+
+
+Open-source PAM and secure access tools have matured significantly. Leading options provide identity-based access, session recording, just-in-time privileges, and support for SSH, RDP, Kubernetes, databases, and more — often without traditional credential vaults.
+
+
+
+### Core Frameworks & PAM Platforms
+
+
+
+| Project | Description | License | Notes |
+
+|---------|-------------|---------|-------|
+
+| **[Teleport](https://github.com/gravitational/teleport)** (Community Edition) | Leading open-source infrastructure access platform. Certificate-based, short-lived credentials for SSH, Kubernetes, databases, Windows, web apps, and more. Built-in session recording, audit logs, RBAC, and SSO. | Apache 2.0 | Most complete open-source modern PAM; commercial edition adds enterprise features |
+
+| **[HashiCorp Boundary](https://github.com/hashicorp/boundary)** (Community Edition) | Identity-aware proxy for secure, least-privileged access to infrastructure. Supports dynamic credentials (via Vault), session recording, automated target discovery, and Terraform automation. | MPL-2.0 | Excellent for platform teams; pairs perfectly with Vault |
+
+| **[JumpServer](https://github.com/jumpserver/jumpserver)** | Full open-source PAM / bastion host platform. Web-based access to SSH, RDP, Kubernetes, databases, and RemoteApp with credential vault, session recording, and on-demand access. | GPL-3.0 | Mature, widely used alternative to commercial bastions |
+
+| **[Apache Guacamole](https://guacamole.apache.org/)** | Clientless remote desktop gateway supporting RDP, VNC, SSH, and more via HTML5. Can be extended for privileged session management and recording. | Apache 2.0 | Lightweight remote access gateway |
+
+| **[FreeIPA](https://www.freeipa.org/)** / Red Hat IdM | Open-source identity management for Linux/Unix with LDAP, Kerberos, DNS, host-based access control, and sudo policies. Strong foundation for Linux privileged access. | GPL | Centralized Linux identity & access control |
+
+| **[Pomerium](https://www.pomerium.com/)** (open-source core) | Identity-aware access proxy for zero-trust access to internal applications and services. | Apache 2.0 | Zero-trust application access |
+
+
+
+### Specialized Libraries & Related Tools
+
+
+
+| Project | Description | Focus Area |
+
+|---------|-------------|---------|
+
+| **[Warpgate](https://github.com/warp-tech/warpgate)** | Smart SSH & HTTPS bastion with recording, audit, and easy access control. | Lightweight bastion |
+
+| **[Bastillion](https://github.com/bastillion-io/Bastillion)** | Web-based SSH console with key management and session control. | Web SSH management |
+
+| **[HashiCorp Vault](https://github.com/hashicorp/vault)** | Secrets management platform frequently paired with Boundary or Teleport for dynamic credentials and rotation. | Secrets & dynamic credentials |
+
+| **Linux PAM modules + sudoers management** | Standard Pluggable Authentication Modules and tools for fine-grained privilege control on Linux systems. | OS-level privilege elevation |
+
+| **Keycloak / Authentik / FreeIPA** | Open-source identity providers that integrate with PAM tools for SSO and MFA. | Identity providers for PAM |
+
+| **Custom certificate authorities & short-lived cert tools** | Various open-source projects for issuing ephemeral SSH/TLS certificates as an alternative to static keys. | Certificate-based access |
+
+
+
+### Additional Notable Open-Source Tools
+
+
+
+- **Session recording & audit tools** — Many projects build on Guacamole or custom proxies for DVR-style playback.
+
+- **Zero-trust networking** — Tailscale (open-source client components), Headscale, and WireGuard-based solutions complement PAM.
+
+- **Secrets engines** — Vault, SOPS, age, and community secrets managers.
+
+- **Kubernetes-native access** — Teleport, Boundary, and projects like kube-apiserver proxies or OPA/Gatekeeper for policy.
+
+- **Community bastions and jump hosts** — Numerous self-hosted solutions for SSH/RDP gatewaying with logging.
+
+
+
+**Note:** Traditional credential vaulting and deep Windows/Active Directory privileged account discovery remain stronger in commercial PAM. Open-source tools excel at modern infrastructure (SSH, Kubernetes, databases, cloud), certificate-based access, session recording, and just-in-time workflows. Many organizations combine Teleport or Boundary with Vault and an IdP for a complete open-source stack.
+
+
+
+---
+
+
+
+## Quick Start Recommendations
+
+
+
+| Goal | Recommended Starting Point |
+
+|------|---------------------------|
+
+| Full open-source modern PAM (SSH, K8s, DBs, recording) | **Teleport Community Edition** |
+
+| Identity-aware proxy + dynamic credentials | **HashiCorp Boundary** + **Vault** |
+
+| Web-based multi-protocol bastion (SSH/RDP/DB) | **JumpServer** |
+
+| Lightweight remote desktop / gateway | **Apache Guacamole** |
+
+| Linux identity & host-based access control | **FreeIPA** |
+
+| Enterprise commercial PAM leaders | **CyberArk**, **BeyondTrust**, or **Delinea** |
+
+| Cloud-native / developer-friendly access | **Teleport**, **StrongDM/Delinea**, or **Akeyless** |
+
+| Secrets + PAM combination | **KeeperPAM** or **Akeyless** + open-source tools |
+
+| European / compliance-focused | **WALLIX** or **Senhasegura** |
+
+| Affordable full-stack PAM | **ManageEngine PAM360** |
+
+
+
+---
+
+
+
+## Contributing
+
+
+
+Contributions, corrections, and new open-source projects are welcome.  
+
+Please open an issue or pull request.
+
+
+
+---
+
+
+
+**Last updated:** August 2026  
+
 Emphasizing open-source tools while documenting the major commercial platforms for context. Teleport, Boundary, and JumpServer represent the strongest open-source foundations for modern privileged access management.
